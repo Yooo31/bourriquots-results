@@ -1,8 +1,7 @@
-// src/pages/Home.js
 import React from 'react';
 import GameCard from '../components/GameCard';
 
-const Home = () => {
+const HomePage = () => {
   const gameData = [
     {
       date: '2023-09-25',
@@ -23,10 +22,10 @@ const Home = () => {
     <div>
       <h1>Accueil</h1>
       {gameData.map((game, index) => (
-        <gameCard key={index} {...game} />
+        <GameCard key={index} {...game} />
       ))}
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
