@@ -1,20 +1,23 @@
 import React from 'react';
 
-const GameCard = ({ date, team1Logo, team2Logo, score }) => {
+const GameCard = ({ date, team1Logo, team2Logo, score, team }) => {
   return (
     <div className="border p-4 rounded-md shadow-md mb-4">
-      <div className="flex justify-between items-center">
-        <div className="flex items-center">
-          <img src={team1Logo} alt="Team 1" className="w-8 h-8 mr-2" />
-          Team 1
+      <div className="flex justify-evenly">
+        <div className="">
+          <img src={team1Logo} alt="Team 1" className="mr-2" />
         </div>
-        <div>{score || 'Time TBD'}</div>
-        <div className="flex items-center">
-          Team 2
-          <img src={team2Logo} alt="Team 2" className="w-8 h-8 ml-2" />
+
+        <div className="flex-col items-center">
+          <div className="text-gray-600 text-center text-xs">{date}</div>
+          <div className="text-2xl text-center font-bold">{score || 'Time TBD'}</div>
+          <div className="text-gray-600 text-center text-xs">{team}</div>
+        </div>
+
+        <div className="">
+          <img src={team2Logo} alt="Team 2" className="ml-2" />
         </div>
       </div>
-      <div className="text-gray-600 mt-2">{date}</div>
     </div>
   );
 };

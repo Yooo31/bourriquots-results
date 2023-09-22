@@ -4,25 +4,37 @@ import GameCard from '../components/GameCard';
 const HomePage = () => {
   const gameData = [
     {
-      date: '2023-09-25',
+      date: '17 septembre 2023',
       team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
       team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
       score: '2-1',
+      team: 'Équipe 2'
     },
     {
-      date: '2023-09-26',
+      date: '17 septembre 2023',
       team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
       team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
       score: '0-0',
+      team: 'Équipe 1'
     },
-    // Ajoutez plus de données de matchs ici
+    {
+      date: '24 septembre 2023',
+      team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
+      team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
+      score: '13h30',
+      team: 'Équipe 2'
+    },
+    {
+      date: '24 septembre 2023',
+      team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
+      team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
+      score: '15h15',
+      team: 'Équipe 1'
+    },
   ];
-
-  console.log('gameData:', gameData);
 
   return (
     <div>
-      <h1>Accueil</h1>
       {gameData.map((game, index) => (
         <GameCard key={index} {...game} />
       ))}
