@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CalendarPage from './pages/CalendarPage';
 import RankingPage from './pages/RankingPage';
-import { NavBar } from './components/NavBar';
+import NavBar from './components/NavBar';
 
 const App = () => {
   return (
