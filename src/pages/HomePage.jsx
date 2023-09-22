@@ -18,6 +18,8 @@ const HomePage = () => {
     // Ajoutez plus de données de matchs ici
   ];
 
+  console.log('gameData:', gameData);
+
   return (
     <div>
       <h1>Accueil</h1>

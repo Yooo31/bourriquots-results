@@ -11,9 +11,9 @@ const App = () => {
     <Router>
       <div>
         <Routes>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/calendar" component={CalendarPage} />
-          <Route path="/ranking" component={RankingPage} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/calendar" element={<CalendarPage />} />
+          <Route path="/ranking" element={<RankingPage />} />
         </Routes>
       </div>
     </Router>
