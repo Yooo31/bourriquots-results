@@ -20,7 +20,6 @@ const RankingPage = () => {
 
   return (
     <div>
-      <h1>Accueil</h1>
       {gameData.map((game, index) => (
         <GameCard key={index} {...game} />
       ))}
