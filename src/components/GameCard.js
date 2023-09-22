@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MatchCard = ({ date, team1Logo, team2Logo, score }) => {
+const GameCard = ({ date, team1Logo, team2Logo, score }) => {
   return (
     <div className="border p-4 rounded-md shadow-md mb-4">
       <div className="flex justify-between items-center">
@@ -19,4 +19,4 @@ const MatchCard = ({ date, team1Logo, team2Logo, score }) => {
   );
 };
 
-export default MatchCard;
+export default GameCard;
