@@ -1,7 +1,7 @@
 import React from 'react';
 import GameCard from '../components/GameCard';
 
-const HomePage = () => {
+const RankingPage = () => {
   const gameData = [
     {
       date: '2023-09-25',
@@ -28,4 +28,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default RankingPage;
