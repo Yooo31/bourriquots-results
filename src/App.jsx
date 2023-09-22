@@ -14,7 +14,7 @@ const App = () => {
         <NavBar />
         <div className="container mx-auto p-4">
           <Routes>
-            <Route exact path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/calendar" element={<CalendarPage />} />
             <Route path="/ranking" element={<RankingPage />} />
           </Routes>

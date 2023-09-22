@@ -12,35 +12,35 @@
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/3169.jpg",
       "name": "Rodez",
       "total1": "5",
-      "total2": "0"
+      "total2": "4"
     },
     {
       "id": 3,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/842.jpg",
       "name": "Sor Agout",
       "total1": "4",
-      "total2": "0"
+      "total2": "1"
     },
     {
       "id": 4,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/club.svg",
       "name": "Negrepolisse",
       "total1": "4",
-      "total2": "0"
+      "total2": "4"
     },
     {
       "id": 5,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/1643.jpg",
       "name": "Léguevin",
       "total1": "4",
-      "total2": "0"
+      "total2": "5"
     },
     {
       "id": 6,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/1198.jpg",
       "name": "La Vallée du Girou",
       "total1": "1",
-      "total2": "0"
+      "total2": "1"
     },
     {
       "id": 7,
@@ -54,21 +54,21 @@
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/1382.jpg",
       "name": "Tournefeuille",
       "total1": "0",
-      "total2": "0"
+      "total2": "4"
     },
     {
       "id": 9,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/535.jpg",
       "name": "La Saudrune",
       "total1": "0",
-      "total2": "0"
+      "total2": "1"
     },
     {
       "id": 10,
       "img": "https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg",
       "name": "St Sulplice",
       "total1": "0",
-      "total2": "0"
+      "total2": "5"
     }
   ]
 }

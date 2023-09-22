@@ -1,37 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import GameCard from '../components/GameCard';
+import teamsData from '../data/teams.json';
+import allGamesData from '../data/allGames.json';
 
-const CalendarPage = () => {
-  const gameData = [
-    {
-      date: '17 septembre 2023',
-      team1Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
-      team2Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
-      score: '27 - 19',
-      team: 'Équipe 2'
-    },
-    {
-      date: '17 septembre 2023',
-      team1Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
-      team2Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
-      score: '10 - 37',
-      team: 'Équipe 1'
-    },
-    {
-      date: '24 septembre 2023',
-      team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
-      team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
-      score: '13h30',
-      team: 'Équipe 2'
-    },
-    {
-      date: '24 septembre 2023',
-      team1Logo: ' https://api-agregateur-static.ffr.fr/assets/embleme/club/642.jpg',
-      team2Logo: 'https://api-agregateur-static.ffr.fr/assets/embleme/club/1402.jpg',
-      score: '15h15',
-      team: 'Équipe 1'
-    },
-  ];
+const HomePage = () => {
+  const [gameData, setGameData] = useState([]);
+
+  useEffect(() => {
+    const allGames = allGamesData.allGames;
+
+    const gamesWithInfo = allGames.map((game) => {
+      const team1Info = teamsData.teams.find((team) => team.id === game.team1);
+      const team2Info = teamsData.teams.find((team) => team.id === game.team2);
+
+      return {
+        date: game.date,
+        team1Logo: team1Info ? team1Info.img : '',
+        team2Logo: team2Info ? team2Info.img : '',
+        score1: game.score1,
+        score2: game.score2,
+      };
+    });
+
+    setGameData(gamesWithInfo);
+  }, []);
 
   return (
     <div>
@@ -42,4 +34,4 @@ const CalendarPage = () => {
   );
 };
 
-export default CalendarPage;
+export default HomePage;
