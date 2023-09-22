@@ -1,9 +1,11 @@
 {
-  "weekGame": {
-    "team1": 1,
-    "team2": 2,
-    "date": "22 septembre",
-    "score1": null,
-    "score2": null
-  }
+  "weekGame": [
+    {
+      "team1": 1,
+      "team2": 2,
+      "date": "22 septembre",
+      "score1": null,
+      "score2": null
+    }
+  ]
 }
