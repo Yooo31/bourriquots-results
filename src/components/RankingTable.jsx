@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Typography } from "@material-tailwind/react";
-const TABLE_HEAD = ["Place", "Équipe", "Points"];
+const TABLE_HEAD = ["Place", "Logo", "Équipe", "Points"];
 
 const RankingTable = ({ team1 }) => {
   return (
@@ -27,6 +27,11 @@ const RankingTable = ({ team1 }) => {
               <td className="p-4">
                 <Typography variant="small" color="blue-gray" className="font-normal">
                   {index + 1}
+                </Typography>
+              </td>
+              <td className="p-4">
+                <Typography variant="small" color="blue-gray" className="font-normal">
+                <img src={data1.img} alt="Team 1" className="mr-2" />
                 </Typography>
               </td>
               <td className="p-4">

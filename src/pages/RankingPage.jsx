@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import teamsData from '../data/teams.json';
 import RankingTable from '../components/RankingTable';
+import { Tabs } from 'flowbite-react';
 
 const RankingPage = () => {
   const [team1, setTeam1] = useState([]);
@@ -37,8 +38,13 @@ const RankingPage = () => {
         const team2RankingData = team2.map((structure) => {
           const id = structure.Equipe.Structure.id;
           const points = structure.score.pointTerrain;
-          const name = structure.Equipe.Structure.nom;
-          return { id, points, name };
+
+          const team = teamsData.teams.find((team) => team.id === id);
+
+          const name = team ? team.name : id;
+          const img = team ? team.img : '';
+
+          return { id, points, name, img };
         });
 
         setTeam2(team2RankingData);
@@ -52,15 +58,22 @@ const RankingPage = () => {
 
 
   return (
-    <div>
-      <div>
+    <Tabs.Group
+      aria-label="Default tabs"
+      style="default"
+    >
+      <Tabs.Item
+        active
+        title="Équipe 1"
+      >
         <RankingTable team1={team1} />
-      </div>
-
-      <div>
+      </Tabs.Item>
+      <Tabs.Item
+        title="Équipe 2"
+      >
         <RankingTable team1={team2} />
-      </div>
-    </div>
+      </Tabs.Item>
+    </Tabs.Group>
   );
 };
 
