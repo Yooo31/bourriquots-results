@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import teamsData from '../data/teams.json';
 import RankingTable from '../components/RankingTable';
 
 const RankingPage = () => {
@@ -19,8 +20,13 @@ const RankingPage = () => {
         const team1RankingData = team1.map((structure) => {
           const id = structure.Equipe.Structure.id;
           const points = structure.score.pointTerrain;
-          const name = structure.Equipe.Structure.nom;
-          return { id, points, name };
+
+          const team = teamsData.teams.find((team) => team.id === id);
+
+          const name = team ? team.name : id;
+          const img = team ? team.img : '';
+
+          return { id, points, name, img };
         });
 
         setTeam1(team1RankingData);
@@ -47,7 +53,13 @@ const RankingPage = () => {
 
   return (
     <div>
-      <RankingTable team1={team1} team2={team2} />
+      <div>
+        <RankingTable team1={team1} />
+      </div>
+
+      <div>
+        <RankingTable team1={team2} />
+      </div>
     </div>
   );
 };

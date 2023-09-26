@@ -1,24 +1,49 @@
 import React from 'react';
+import { Card, Typography } from "@material-tailwind/react";
+const TABLE_HEAD = ["Place", "Équipe", "Points"];
 
-const RankingTable = ({ team1, team2 }) => {
+const RankingTable = ({ team1 }) => {
   return (
-    <div>
-      <h2>Classement</h2>
-      <ul>
-        {team1.map((data1, index) => (
-          <li key={index}>
-            ID : {data1.id}, Nom : {data1.name}, Points : {data1.points}
-          </li>
-        ))}
-      </ul>
-      <ul>
-        {team2.map((data2, index) => (
-          <li key={index}>
-            ID : {data2.id}, Nom : {data2.name}, Points : {data2.points}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Card className="h-full w-full overflow-scroll">
+      <table className="w-full min-w-max table-auto text-left">
+        <thead>
+          <tr>
+            {TABLE_HEAD.map((head) => (
+              <th key={head} className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+                <Typography
+                  variant="small"
+                  color="blue-gray"
+                  className="font-normal leading-none opacity-70"
+                >
+                  {head}
+                </Typography>
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {team1.map((data1, index) => (
+            <tr key={data1.id} className="even:bg-blue-gray-50/50">
+              <td className="p-4">
+                <Typography variant="small" color="blue-gray" className="font-normal">
+                  {index + 1}
+                </Typography>
+              </td>
+              <td className="p-4">
+                <Typography variant="small" color="blue-gray" className="font-normal">
+                  {data1.name}
+                </Typography>
+              </td>
+              <td className="p-4">
+                <Typography variant="small" color="blue-gray" className="font-normal">
+                  {data1.points}
+                </Typography>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Card>
   );
 };
 
