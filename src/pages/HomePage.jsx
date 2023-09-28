@@ -3,8 +3,6 @@ import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 import axios from 'axios';
 import GameCard from '../components/GameCard';
-// import teamsData from '../data/teams.json';
-// import weekGameData from '../data/gameWeek.json';
 
 const HomePage = () => {
   const [nextGame, setNextGame] = useState([]);
