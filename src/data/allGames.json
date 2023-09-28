@@ -1,127 +1,127 @@
 {
   "allGames": [
     {
-      "team1": 10,
-      "team2": 1,
+      "team1": "1402",
+      "team2": "642",
       "date": "17 septembre",
       "score1": "10 - 37",
       "score2": "27 - 19"
     },
     {
-      "team1": 1,
-      "team2": 2,
+      "team1": "642",
+      "team2": "3169",
       "date": "24 septembre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 9,
-      "team2": 1,
+      "team1": "535",
+      "team2": "642",
       "date": "01 octobre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 7,
-      "team2": 1,
+      "team1": "475",
+      "team2": "642",
       "date": "15 octobre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 6,
+      "team1": "642",
+      "team2": "1198",
       "date": "22 octobre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 8,
-      "team2": 1,
+      "team1": "1382",
+      "team2": "642",
       "date": "05 novembre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 5,
+      "team1": "642",
+      "team2": "1643",
       "date": "12 novembre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 3,
-      "team2": 1,
+      "team1": "842",
+      "team2": "642",
       "date": "19 novembre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 4,
+      "team1": "642",
+      "team2": "629",
       "date": "03 décembre",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 10,
+      "team1": "642",
+      "team2": "1402",
       "date": "10 décembre",
       "score1": "10 - 37",
       "score2": "27 - 19"
     },
     {
-      "team1": 2,
-      "team2": 1,
+      "team1": "3169",
+      "team2": "642",
       "date": "21 janvier",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 9,
+      "team1": "642",
+      "team2": "535",
       "date": "28 janvier",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 7,
+      "team1": "642",
+      "team2": "475",
       "date": "11 février",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 6,
-      "team2": 1,
+      "team1": "1198",
+      "team2": "642",
       "date": "18 février",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 8,
+      "team1": "642",
+      "team2": "1382",
       "date": "03 mars",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 5,
-      "team2": 1,
+      "team1": "1643",
+      "team2": "642",
       "date": "10 mars",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 1,
-      "team2": 3,
+      "team1": "642",
+      "team2": "842",
       "date": "24 mars",
       "score1": null,
       "score2": null
     },
     {
-      "team1": 4,
-      "team2": 1,
+      "team1": "629",
+      "team2": "642",
       "date": "07 avril",
       "score1": null,
       "score2": null
