@@ -13,7 +13,7 @@ const GameCard = ({ gameData }) => {
             <img src={ gameData.teamLocal } alt="Team 1" className="mr-2" />
           </div>
 
-          <div className="flex-col items-center">
+          <div className="flex flex-col justify-center items-center">
             <div className="text-gray-600 text-center text-xs">{ gameData.date }</div>
             <div className="text-2xl text-center font-bold">
               { gameData.info2 }
@@ -32,7 +32,7 @@ const GameCard = ({ gameData }) => {
             <img src={ gameData.teamLocal } alt="Team 1" className="mr-2" />
           </div>
 
-          <div className="flex-col items-center">
+          <div className="flex flex-col justify-center items-center">
             <div className="text-gray-600 text-center text-xs">{ gameData.date }</div>
             <div className="text-2xl text-center font-bold">
               { gameData.info1 }
