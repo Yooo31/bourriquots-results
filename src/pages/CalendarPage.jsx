@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import GameCard from '../components/GameCard';
+import LastGameCard from '../components/LastGameCard';
 import teamsData from '../data/teams.json';
 import allGamesData from '../data/allGames.json';
 
@@ -28,7 +28,7 @@ const HomePage = () => {
   return (
     <div>
       {gameData.map((game, index) => (
-        <GameCard key={index} {...game} />
+        <LastGameCard key={index} {...game} />
       ))}
     </div>
   );
